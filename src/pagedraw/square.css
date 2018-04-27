@@ -20,7 +20,7 @@
     flex-direction: column;
     padding-top: 2px;
     padding-bottom: 2px;
-    background: rgb(216, 216, 216);
+    background: rgb(232, 228, 228);
 }
 
 .square-0-0-0-0-0 {
@@ -34,7 +34,7 @@
     height: 36px;
     flex-shrink: 0;
     border-radius: 5px;
-    box-shadow: inset 0px 0px 1px 0px #000;
+    box-shadow: 0px 0px 1px 0px #000;
     border-width: 0px;
 }
 
@@ -71,7 +71,7 @@
     box-shadow: inset 0px 0px 1px 0px #000;
     background: rgb(216, 216, 216);
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    color: #000000;
+    color: rgb(32, 79, 169);
     font-size: 14px;
     font-weight: normal;
     font-style: normal;
