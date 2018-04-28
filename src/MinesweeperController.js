@@ -25,8 +25,8 @@ let EXPOSED_STATE = "exposed";
 
 export default class MinesweeperController extends Component {
 
-	constructor() {
-		super();
+	constructor(props) {
+		super(props);
 
 		this.state = {
 			numberOfBombs: 10,
@@ -34,24 +34,23 @@ export default class MinesweeperController extends Component {
 			numberOfFlags: 0,
 			board: generateBoard(10),
 			states: [
-				Array(9).fill(EXPOSED_STATE),
-				Array(9).fill(FLAG_STATE),
-				Array(9).fill(EXPOSED_STATE),
-				Array(9).fill(EXPOSED_STATE),
-				Array(9).fill(EXPOSED_STATE),
-				Array(9).fill(EXPOSED_STATE),
-				Array(9).fill(EXPOSED_STATE),
-				Array(9).fill(EXPOSED_STATE),
-				Array(9).fill(EXPOSED_STATE),
+				Array(9).fill(DEFAULT_STATE),
+				Array(9).fill(DEFAULT_STATE),
+				Array(9).fill(DEFAULT_STATE),
+				Array(9).fill(DEFAULT_STATE),
+				Array(9).fill(DEFAULT_STATE),
+				Array(9).fill(DEFAULT_STATE),
+				Array(9).fill(DEFAULT_STATE),
+				Array(9).fill(DEFAULT_STATE),
+				Array(9).fill(DEFAULT_STATE),
 			],
 		};
+
+		this.handleClick = this.handleClick.bind(this);
+		this.openSquare = this.openSquare.bind(this);
 	}
 
 	render() {
-	    if (this.state.fetchedData === null) {
-	      return <div />;
-	    }
-
 	    return (<Board 
 	      handleClick={this.handleClick}
 	      board={this.state.board}
@@ -59,24 +58,87 @@ export default class MinesweeperController extends Component {
 	    />);
   	}
 
-  	handleClick(x, y, state, boardValue) {
-  		alert(`Square clicked in position: (${x}, ${y}). State = ${state}, boardValue = ${boardValue}`);
-  	}
+  	
 
+  	gameOver(x, y) {
+  		// Perform changes on the board for gameOver!
+  		// x, y are the coordinates of the clicked bomb...
+
+  		alert("Game over!");
+  	}
 
 
 	
 
-	openSquare(board, x, y) {
+	openSquare(x, y, appState) {
+		let board = appState.board;
+		let states = appState.states;
 
+		states[x][y] = EXPOSED_STATE;
+
+		
+
+
+		const N = 9;
+		var i, j;
+		for(i=x-1; i <= x+1; i++) {
+			for(j=y-1; j <= y+1; j++) {
+
+				if(i >= 0 && i < N && j >= 0 && j < N 
+					&& (board[i][j] != 9) 
+					&& (states[i][j] == DEFAULT_STATE) ) {
+					// console.log("Incrementing i, j = ", i, j);
+					states[i][j] = EXPOSED_STATE;
+				}
+			}
+		}
+
+		appState.states = states;
+		
+		return appState;
 	}
 
 	squareClicked(x, y) {
 		let board = this.state.board;
 
+		if(board[x][y] == 9) { // BOMB! Game over!
+			this.gameOver();
+		}
 		
 
+		// update state here
+		let newAppState = this.openSquare(x, y, this.state);
+
+		this.state = newAppState;
 	}
+
+	handleClick(x, y) {
+
+		console.log("State before click: ", this.state);
+		// alert(`Square clicked in position: (${x}, ${y})`);
+
+  		let board = this.state.board;
+
+		if(board[x][y] == 9) { // BOMB! Game over!
+			this.gameOver();
+		}
+		
+
+		// update state here
+		let newAppState = this.openSquare(x, y, this.state);
+
+		this.state = newAppState;
+
+		this.setState((prevState, props) => {
+			return newAppState;
+		});
+
+		console.log("State after click: ", this.state);
+
+		// alert(`Square clicked in position: (${x}, ${y})`);
+  	}
+
+
 }
 
 
@@ -159,15 +221,15 @@ Board states:
 function generateInitialStates() {
 
 	return [
-		Array(9).fill(EXPOSED_STATE),
-		Array(9).fill(EXPOSED_STATE),
-		Array(9).fill(EXPOSED_STATE),
-		Array(9).fill(EXPOSED_STATE),
-		Array(9).fill(EXPOSED_STATE),
-		Array(9).fill(EXPOSED_STATE),
-		Array(9).fill(EXPOSED_STATE),
-		Array(9).fill(EXPOSED_STATE),
-		Array(9).fill(EXPOSED_STATE),
+		Array(9).fill(DEFAULT_STATE),
+		Array(9).fill(DEFAULT_STATE),
+		Array(9).fill(DEFAULT_STATE),
+		Array(9).fill(DEFAULT_STATE),
+		Array(9).fill(DEFAULT_STATE),
+		Array(9).fill(DEFAULT_STATE),
+		Array(9).fill(DEFAULT_STATE),
+		Array(9).fill(DEFAULT_STATE),
+		Array(9).fill(DEFAULT_STATE),
 	];
 }
 
