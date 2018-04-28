@@ -10,6 +10,46 @@ function render() {
                 <Boardline xPosition={0} states={(this.props.states[0])} boardValues={(this.props.board[0])} handleClick={this.props.handleClick} /> 
             </div>
         </div>
+        <div className="board-1">
+            <div className="board-boardline_instance-2">
+                <Boardline xPosition={0} states={(this.props.states[0])} boardValues={(this.props.board[0])} handleClick={this.props.handleClick} /> 
+            </div>
+        </div>
+        <div className="board-2">
+            <div className="board-boardline_instance-1">
+                <Boardline xPosition={0} states={(this.props.states[0])} boardValues={(this.props.board[0])} handleClick={this.props.handleClick} /> 
+            </div>
+        </div>
+        <div className="board-3">
+            <div className="board-boardline_instance-9">
+                <Boardline xPosition={0} states={(this.props.states[0])} boardValues={(this.props.board[0])} handleClick={this.props.handleClick} /> 
+            </div>
+        </div>
+        <div className="board-4">
+            <div className="board-boardline_instance-5">
+                <Boardline xPosition={0} states={(this.props.states[0])} boardValues={(this.props.board[0])} handleClick={this.props.handleClick} /> 
+            </div>
+        </div>
+        <div className="board-5">
+            <div className="board-boardline_instance-10">
+                <Boardline xPosition={0} states={(this.props.states[0])} boardValues={(this.props.board[0])} handleClick={this.props.handleClick} /> 
+            </div>
+        </div>
+        <div className="board-6">
+            <div className="board-boardline_instance-25">
+                <Boardline xPosition={0} states={(this.props.states[0])} boardValues={(this.props.board[0])} handleClick={this.props.handleClick} /> 
+            </div>
+        </div>
+        <div className="board-7">
+            <div className="board-boardline_instance-8">
+                <Boardline xPosition={0} states={(this.props.states[0])} boardValues={(this.props.board[0])} handleClick={this.props.handleClick} /> 
+            </div>
+        </div>
+        <div className="board-8">
+            <div className="board-boardline_instance-4">
+                <Boardline xPosition={0} states={(this.props.states[0])} boardValues={(this.props.board[0])} handleClick={this.props.handleClick} /> 
+            </div>
+        </div>
     </div>;
 };
 

@@ -3,16 +3,94 @@
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    padding-bottom: 320px;
     background: #FFFFFF;
 }
 
 .board-0 {
     display: flex;
-    padding-right: 484px;
 }
 
 .board-boardline_instance-3 {
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.board-1 {
+    display: flex;
+}
+
+.board-boardline_instance-2 {
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.board-2 {
+    display: flex;
+}
+
+.board-boardline_instance-1 {
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.board-3 {
+    display: flex;
+}
+
+.board-boardline_instance-9 {
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.board-4 {
+    display: flex;
+}
+
+.board-boardline_instance-5 {
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.board-5 {
+    display: flex;
+}
+
+.board-boardline_instance-10 {
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.board-6 {
+    display: flex;
+}
+
+.board-boardline_instance-25 {
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.board-7 {
+    display: flex;
+}
+
+.board-boardline_instance-8 {
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.board-8 {
+    display: flex;
+}
+
+.board-boardline_instance-4 {
     flex-shrink: 0;
     display: flex;
     flex-direction: column;

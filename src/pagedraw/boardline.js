@@ -9,6 +9,30 @@ function render() {
             <div className="boardline-square_instance_2">
                 <Square state={(this.props.states[0])} color={"#ffffff"} xPosition={this.props.xPosition} yPosition={0} handleClick={this.props.handleClick} boardValue={(this.props.boardValues[0])} /> 
             </div>
+            <div className="boardline-square_instance_2-9">
+                <Square state={(this.props.states[0])} color={"#ffffff"} xPosition={this.props.xPosition} yPosition={0} handleClick={this.props.handleClick} boardValue={(this.props.boardValues[0])} /> 
+            </div>
+            <div className="boardline-square_instance_2-6">
+                <Square state={(this.props.states[0])} color={"#ffffff"} xPosition={this.props.xPosition} yPosition={0} handleClick={this.props.handleClick} boardValue={(this.props.boardValues[0])} /> 
+            </div>
+            <div className="boardline-square_instance_2-4">
+                <Square state={(this.props.states[0])} color={"#ffffff"} xPosition={this.props.xPosition} yPosition={0} handleClick={this.props.handleClick} boardValue={(this.props.boardValues[0])} /> 
+            </div>
+            <div className="boardline-square_instance_2-91">
+                <Square state={(this.props.states[0])} color={"#ffffff"} xPosition={this.props.xPosition} yPosition={0} handleClick={this.props.handleClick} boardValue={(this.props.boardValues[0])} /> 
+            </div>
+            <div className="boardline-square_instance_2-0">
+                <Square state={(this.props.states[0])} color={"#ffffff"} xPosition={this.props.xPosition} yPosition={0} handleClick={this.props.handleClick} boardValue={(this.props.boardValues[0])} /> 
+            </div>
+            <div className="boardline-square_instance_2-7">
+                <Square state={(this.props.states[0])} color={"#ffffff"} xPosition={this.props.xPosition} yPosition={0} handleClick={this.props.handleClick} boardValue={(this.props.boardValues[0])} /> 
+            </div>
+            <div className="boardline-square_instance_2-1">
+                <Square state={(this.props.states[0])} color={"#ffffff"} xPosition={this.props.xPosition} yPosition={0} handleClick={this.props.handleClick} boardValue={(this.props.boardValues[0])} /> 
+            </div>
+            <div className="boardline-square_instance_2-40">
+                <Square state={(this.props.states[0])} color={"#ffffff"} xPosition={this.props.xPosition} yPosition={0} handleClick={this.props.handleClick} boardValue={(this.props.boardValues[0])} /> 
+            </div>
         </div>
     </div>;
 };
