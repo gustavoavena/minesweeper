@@ -3,41 +3,25 @@
     display: flex;
     flex-direction: column;
     flex-grow: 1;
+    padding-top: 85px;
     background: rgb(251, 244, 244);
     min-height: 100vh;
 }
 
 .mainscreen-0 {
-    width: 0px;
-    flex-grow: 0.49707602339181284;
-    flex-basis: 0px;
-}
-
-.mainscreen-1 {
     display: flex;
+    padding-left: 84px;
+    padding-right: 677px;
 }
 
-.mainscreen-1-0 {
-    height: 0px;
-    flex-grow: 0.49848024316109424;
-    flex-basis: 0px;
-}
-
-.mainscreen-board_instance-0 {
+.mainscreen-board_instance-1 {
     flex-shrink: 0;
     display: flex;
     flex-direction: column;
 }
 
-.mainscreen-1-2 {
-    height: 0px;
-    flex-grow: 0.5015197568389058;
-    flex-basis: 0px;
-}
-
-.mainscreen-2 {
-    width: 0px;
-    flex-grow: 0.5029239766081871;
+.mainscreen-1 {
+    flex-grow: 1;
     flex-basis: 0px;
 }
 

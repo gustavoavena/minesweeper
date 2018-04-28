@@ -6,15 +6,12 @@ import './mainscreen.css';
 
 function render() {
     return <div className="mainscreen-mainscreen-8">
-        <div className="mainscreen-0" /> 
-        <div className="mainscreen-1">
-            <div className="mainscreen-1-0" /> 
-            <div className="mainscreen-board_instance-0">
+        <div className="mainscreen-0">
+            <div className="mainscreen-board_instance-1">
                 <MinesweeperController />
             </div>
-            <div className="mainscreen-1-2" /> 
         </div>
-        <div className="mainscreen-2" /> 
+        <div className="mainscreen-1" /> 
     </div>;
 };
 

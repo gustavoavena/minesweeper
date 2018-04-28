@@ -5,7 +5,7 @@ import './square.css';
 function render() {
     return <div className="square">
         { (this.props.state === "flag") ?
-            <div onClick={this.props.handleClick} className="square-flag-6">
+            <div onClick={() => this.props.handleClick(this.props.xPosition, this.props.yPosition)} className="square-flag-6">
                 <div className="square-0-0-0">
                     <div className="square-outer_square-9">
                         <div className="square-0-0-0-0-0">
@@ -16,18 +16,18 @@ function render() {
             </div>
         : null}
         { (this.props.state === "exposed") ?
-            <div onClick={this.props.handleClick} className="square-exposed-7">
+            <div onClick={() => this.props.handleClick(this.props.xPosition, this.props.yPosition)} className="square-exposed-7">
                 <div className="square-1-0-0">
                     <div className="square-outer_square-4">
                         <div className="square-1-0-0-0-0">
-                            <input type="text" placeholder="1" value={this.props.text} className="square-bombcount-8" /> 
+                            <input type="text" value={this.props.text} className="square-bombcount-8" /> 
                         </div>
                     </div>
                 </div>
             </div>
         : null}
         { (this.props.state === "bomb") ?
-            <div onClick={this.props.handleClick} className="square-bomb-8">
+            <div onClick={() => this.props.handleClick(this.props.xPosition, this.props.yPosition)} className="square-bomb-8">
                 <div className="square-2-0-0">
                     <div className="square-outer_square-99">
                         <div className="square-2-0-0-0-0">
@@ -38,7 +38,7 @@ function render() {
             </div>
         : null}
         { (this.props.state === "default") ?
-            <div onClick={() => this.props.handleClick(this.props.xPosition, this.props.yPosition)} className="square-default-9">
+            <div onClick={() => this.props.handleClick(this.props.xPosition, this.props.yPosition, this.props.state, this.props.board)} className="square-default-9">
                 <div className="square-3-0-0">
                     <div className="square-outer_square-3">
                         <div className="square-3-0-0-0-0">
