@@ -13,7 +13,7 @@ negative values: Flag
 
 
 import React, { Component } from 'react';
-import Square from './pagedraw/square';
+// import Square from './pagedraw/square';
 import Board from './pagedraw/board';
 
 export default class MinesweeperController extends Component {
@@ -22,10 +22,10 @@ export default class MinesweeperController extends Component {
 		super(props);
 
 		this.state = {
-			numberOfBombs = 10,
-			remainingBombs = 10,
-			numberOfFlags = 0,
-			board = generateBoard(10),
+			numberOfBombs: 10,
+			remainingBombs: 10,
+			numberOfFlags: 0,
+			board: generateBoard(10),
 		};
 	}
 
@@ -35,14 +35,31 @@ export default class MinesweeperController extends Component {
 	    }
 
 	    return <Board 
-	      handleClick={handleClick}
+	      handleClick={this.handleClick}
 	    />;
+  	}
+
+  	handleClick(x, y) {
+  		alert("Square clicked in position:", x, y);
   	}
 
 	
 
 
-	generateBoard(bombs = 10) {
+
+	
+
+	openSquare(board, x, y) {
+
+	}
+
+	squareClicked() {
+
+	}
+}
+
+
+function generateBoard(bombs = 10) {
 		const N = 9;
 
 
@@ -95,11 +112,3 @@ export default class MinesweeperController extends Component {
 
 		return board;
 	}
-	(
-
-	openSquare(board, x, y) {
-
-	}
-
-	squareClicked()
-}

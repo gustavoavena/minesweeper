@@ -9,31 +9,31 @@ function render() {
             <div className="board-line_1">
                 <div className="board-0-0-0">
                     <div className="board-square_instance-5">
-                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={0} yPosition={0} /> 
+                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={0} yPosition={0} handleClick={this.props.handleClick} /> 
                     </div>
                     <div className="board-square_instance-0">
-                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={0} yPosition={1} /> 
+                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={0} yPosition={1} handleClick={this.props.handleClick} /> 
                     </div>
                     <div className="board-square_instance-1">
-                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={0} yPosition={2} /> 
+                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={0} yPosition={2} handleClick={this.props.handleClick} /> 
                     </div>
                     <div className="board-square_instance-6">
-                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={0} yPosition={3} /> 
+                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={0} yPosition={3} handleClick={this.props.handleClick} /> 
                     </div>
                     <div className="board-square_instance-63">
-                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={0} yPosition={4} /> 
+                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={0} yPosition={4} handleClick={this.props.handleClick} /> 
                     </div>
                     <div className="board-square_instance-7">
-                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={0} yPosition={5} /> 
+                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={0} yPosition={5} handleClick={this.props.handleClick} /> 
                     </div>
                     <div className="board-square_instance-76">
-                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={0} yPosition={6} /> 
+                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={0} yPosition={6} handleClick={this.props.handleClick} /> 
                     </div>
                     <div className="board-square_instance-8">
-                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={0} yPosition={7} /> 
+                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={0} yPosition={7} handleClick={this.props.handleClick} /> 
                     </div>
                     <div className="board-square_instance-4">
-                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={0} yPosition={8} /> 
+                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={0} yPosition={8} handleClick={this.props.handleClick} /> 
                     </div>
                 </div>
             </div>
@@ -42,31 +42,31 @@ function render() {
             <div className="board-line_2">
                 <div className="board-1-0-0">
                     <div className="board-square_instance-2">
-                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={1} yPosition={0} /> 
+                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={1} yPosition={0} handleClick={this.props.handleClick} /> 
                     </div>
                     <div className="board-square_instance-80">
-                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={1} yPosition={1} /> 
+                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={1} yPosition={1} handleClick={this.props.handleClick} /> 
                     </div>
                     <div className="board-square_instance-68">
-                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={1} yPosition={2} /> 
+                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={1} yPosition={2} handleClick={this.props.handleClick} /> 
                     </div>
                     <div className="board-square_instance-15">
-                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={1} yPosition={3} /> 
+                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={1} yPosition={3} handleClick={this.props.handleClick} /> 
                     </div>
                     <div className="board-square_instance-9">
-                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={1} yPosition={4} /> 
+                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={1} yPosition={4} handleClick={this.props.handleClick} /> 
                     </div>
                     <div className="board-square_instance-58">
-                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={1} yPosition={5} /> 
+                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={1} yPosition={5} handleClick={this.props.handleClick} /> 
                     </div>
                     <div className="board-square_instance-87">
-                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={1} yPosition={6} /> 
+                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={1} yPosition={6} handleClick={this.props.handleClick} /> 
                     </div>
                     <div className="board-square_instance-43">
-                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={1} yPosition={7} /> 
+                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={1} yPosition={7} handleClick={this.props.handleClick} /> 
                     </div>
                     <div className="board-square_instance-75">
-                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={1} yPosition={8} /> 
+                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={1} yPosition={8} handleClick={this.props.handleClick} /> 
                     </div>
                 </div>
             </div>
@@ -75,31 +75,31 @@ function render() {
             <div className="board-line_3">
                 <div className="board-2-0-0">
                     <div className="board-square_instance-05">
-                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={2} yPosition={0} /> 
+                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={2} yPosition={0} handleClick={this.props.handleClick} /> 
                     </div>
                     <div className="board-square_instance-86">
-                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={2} yPosition={1} /> 
+                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={2} yPosition={1} handleClick={this.props.handleClick} /> 
                     </div>
                     <div className="board-square_instance-633">
-                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={2} yPosition={2} /> 
+                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={2} yPosition={2} handleClick={this.props.handleClick} /> 
                     </div>
                     <div className="board-square_instance-583">
-                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={2} yPosition={3} /> 
+                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={2} yPosition={3} handleClick={this.props.handleClick} /> 
                     </div>
                     <div className="board-square_instance-94">
-                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={2} yPosition={4} /> 
+                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={2} yPosition={4} handleClick={this.props.handleClick} /> 
                     </div>
                     <div className="board-square_instance-40">
-                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={2} yPosition={5} /> 
+                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={2} yPosition={5} handleClick={this.props.handleClick} /> 
                     </div>
                     <div className="board-square_instance-50">
-                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={2} yPosition={6} /> 
+                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={2} yPosition={6} handleClick={this.props.handleClick} /> 
                     </div>
                     <div className="board-square_instance-47">
-                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={2} yPosition={7} /> 
+                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={2} yPosition={7} handleClick={this.props.handleClick} /> 
                     </div>
                     <div className="board-square_instance-45">
-                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={2} yPosition={8} /> 
+                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={2} yPosition={8} handleClick={this.props.handleClick} /> 
                     </div>
                 </div>
             </div>
@@ -108,31 +108,31 @@ function render() {
             <div className="board-line_4">
                 <div className="board-3-0-0">
                     <div className="board-square_instance-21">
-                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={3} yPosition={0} /> 
+                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={3} yPosition={0} handleClick={this.props.handleClick} /> 
                     </div>
                     <div className="board-square_instance-08">
-                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={3} yPosition={1} /> 
+                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={3} yPosition={1} handleClick={this.props.handleClick} /> 
                     </div>
                     <div className="board-square_instance-17">
-                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={3} yPosition={2} /> 
+                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={3} yPosition={2} handleClick={this.props.handleClick} /> 
                     </div>
                     <div className="board-square_instance-48">
-                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={3} yPosition={3} /> 
+                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={3} yPosition={3} handleClick={this.props.handleClick} /> 
                     </div>
                     <div className="board-square_instance-435">
-                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={3} yPosition={4} /> 
+                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={3} yPosition={4} handleClick={this.props.handleClick} /> 
                     </div>
                     <div className="board-square_instance-03">
-                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={3} yPosition={5} /> 
+                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={3} yPosition={5} handleClick={this.props.handleClick} /> 
                     </div>
                     <div className="board-square_instance-29">
-                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={3} yPosition={6} /> 
+                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={3} yPosition={6} handleClick={this.props.handleClick} /> 
                     </div>
                     <div className="board-square_instance-3">
-                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={3} yPosition={7} /> 
+                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={3} yPosition={7} handleClick={this.props.handleClick} /> 
                     </div>
                     <div className="board-square_instance-84">
-                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={3} yPosition={8} /> 
+                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={3} yPosition={8} handleClick={this.props.handleClick} /> 
                     </div>
                 </div>
             </div>
@@ -141,31 +141,31 @@ function render() {
             <div className="board-line_5">
                 <div className="board-4-0-0">
                     <div className="board-square_instance-487">
-                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={4} yPosition={0} /> 
+                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={4} yPosition={0} handleClick={this.props.handleClick} /> 
                     </div>
                     <div className="board-square_instance-501">
-                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={4} yPosition={1} /> 
+                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={4} yPosition={1} handleClick={this.props.handleClick} /> 
                     </div>
                     <div className="board-square_instance-35">
-                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={4} yPosition={2} /> 
+                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={4} yPosition={2} handleClick={this.props.handleClick} /> 
                     </div>
                     <div className="board-square_instance-06">
-                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={4} yPosition={3} /> 
+                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={4} yPosition={3} handleClick={this.props.handleClick} /> 
                     </div>
                     <div className="board-square_instance-351">
-                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={4} yPosition={4} /> 
+                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={4} yPosition={4} handleClick={this.props.handleClick} /> 
                     </div>
                     <div className="board-square_instance-85">
-                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={4} yPosition={5} /> 
+                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={4} yPosition={5} handleClick={this.props.handleClick} /> 
                     </div>
                     <div className="board-square_instance-406">
-                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={4} yPosition={6} /> 
+                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={4} yPosition={6} handleClick={this.props.handleClick} /> 
                     </div>
                     <div className="board-square_instance-33">
-                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={4} yPosition={7} /> 
+                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={4} yPosition={7} handleClick={this.props.handleClick} /> 
                     </div>
                     <div className="board-square_instance-800">
-                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={4} yPosition={8} /> 
+                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={4} yPosition={8} handleClick={this.props.handleClick} /> 
                     </div>
                 </div>
             </div>
@@ -174,31 +174,31 @@ function render() {
             <div className="board-line_6">
                 <div className="board-5-0-0">
                     <div className="board-square_instance-46">
-                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={5} yPosition={0} /> 
+                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={5} yPosition={0} handleClick={this.props.handleClick} /> 
                     </div>
                     <div className="board-square_instance-67">
-                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={5} yPosition={1} /> 
+                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={5} yPosition={1} handleClick={this.props.handleClick} /> 
                     </div>
                     <div className="board-square_instance-212">
-                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={5} yPosition={2} /> 
+                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={5} yPosition={2} handleClick={this.props.handleClick} /> 
                     </div>
                     <div className="board-square_instance-842">
-                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={5} yPosition={3} /> 
+                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={5} yPosition={3} handleClick={this.props.handleClick} /> 
                     </div>
                     <div className="board-square_instance-23">
-                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={5} yPosition={4} /> 
+                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={5} yPosition={4} handleClick={this.props.handleClick} /> 
                     </div>
                     <div className="board-square_instance-28">
-                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={5} yPosition={5} /> 
+                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={5} yPosition={5} handleClick={this.props.handleClick} /> 
                     </div>
                     <div className="board-square_instance-18">
-                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={5} yPosition={6} /> 
+                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={5} yPosition={6} handleClick={this.props.handleClick} /> 
                     </div>
                     <div className="board-square_instance-19">
-                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={5} yPosition={7} /> 
+                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={5} yPosition={7} handleClick={this.props.handleClick} /> 
                     </div>
                     <div className="board-square_instance-866">
-                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={5} yPosition={8} /> 
+                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={5} yPosition={8} handleClick={this.props.handleClick} /> 
                     </div>
                 </div>
             </div>
@@ -207,31 +207,31 @@ function render() {
             <div className="board-line_7">
                 <div className="board-6-0-0">
                     <div className="board-square_instance-873">
-                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={6} yPosition={0} /> 
+                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={6} yPosition={0} handleClick={this.props.handleClick} /> 
                     </div>
                     <div className="board-square_instance-53">
-                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={6} yPosition={1} /> 
+                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={6} yPosition={1} handleClick={this.props.handleClick} /> 
                     </div>
                     <div className="board-square_instance-22">
-                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={6} yPosition={2} /> 
+                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={6} yPosition={2} handleClick={this.props.handleClick} /> 
                     </div>
                     <div className="board-square_instance-66">
-                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={6} yPosition={3} /> 
+                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={6} yPosition={3} handleClick={this.props.handleClick} /> 
                     </div>
                     <div className="board-square_instance-39">
-                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={6} yPosition={4} /> 
+                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={6} yPosition={4} handleClick={this.props.handleClick} /> 
                     </div>
                     <div className="board-square_instance-93">
-                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={6} yPosition={5} /> 
+                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={6} yPosition={5} handleClick={this.props.handleClick} /> 
                     </div>
                     <div className="board-square_instance-41">
-                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={6} yPosition={6} /> 
+                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={6} yPosition={6} handleClick={this.props.handleClick} /> 
                     </div>
                     <div className="board-square_instance-588">
-                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={6} yPosition={7} /> 
+                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={6} yPosition={7} handleClick={this.props.handleClick} /> 
                     </div>
                     <div className="board-square_instance-20">
-                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={6} yPosition={8} /> 
+                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={6} yPosition={8} handleClick={this.props.handleClick} /> 
                     </div>
                 </div>
             </div>
@@ -240,31 +240,31 @@ function render() {
             <div className="board-line_8">
                 <div className="board-7-0-0">
                     <div className="board-square_instance-034">
-                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={7} yPosition={0} /> 
+                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={7} yPosition={0} handleClick={this.props.handleClick} /> 
                     </div>
                     <div className="board-square_instance-81">
-                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={7} yPosition={1} /> 
+                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={7} yPosition={1} handleClick={this.props.handleClick} /> 
                     </div>
                     <div className="board-square_instance-871">
-                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={7} yPosition={2} /> 
+                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={7} yPosition={2} handleClick={this.props.handleClick} /> 
                     </div>
                     <div className="board-square_instance-339">
-                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={7} yPosition={3} /> 
+                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={7} yPosition={3} handleClick={this.props.handleClick} /> 
                     </div>
                     <div className="board-square_instance-70">
-                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={7} yPosition={4} /> 
+                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={7} yPosition={4} handleClick={this.props.handleClick} /> 
                     </div>
                     <div className="board-square_instance-080">
-                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={7} yPosition={5} /> 
+                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={7} yPosition={5} handleClick={this.props.handleClick} /> 
                     </div>
                     <div className="board-square_instance-0346">
-                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={7} yPosition={6} /> 
+                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={7} yPosition={6} handleClick={this.props.handleClick} /> 
                     </div>
                     <div className="board-square_instance-51">
-                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={7} yPosition={7} /> 
+                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={7} yPosition={7} handleClick={this.props.handleClick} /> 
                     </div>
                     <div className="board-square_instance-635">
-                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={7} yPosition={8} /> 
+                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={7} yPosition={8} handleClick={this.props.handleClick} /> 
                     </div>
                 </div>
             </div>
@@ -273,31 +273,31 @@ function render() {
             <div className="board-line_9">
                 <div className="board-8-0-0">
                     <div className="board-square_instance-802">
-                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={8} yPosition={0} /> 
+                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={8} yPosition={0} handleClick={this.props.handleClick} /> 
                     </div>
                     <div className="board-square_instance-62">
-                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={8} yPosition={1} /> 
+                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={8} yPosition={1} handleClick={this.props.handleClick} /> 
                     </div>
                     <div className="board-square_instance-69">
-                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={8} yPosition={2} /> 
+                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={8} yPosition={2} handleClick={this.props.handleClick} /> 
                     </div>
                     <div className="board-square_instance-00">
-                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={8} yPosition={3} /> 
+                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={8} yPosition={3} handleClick={this.props.handleClick} /> 
                     </div>
                     <div className="board-square_instance-032">
-                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={8} yPosition={4} /> 
+                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={8} yPosition={4} handleClick={this.props.handleClick} /> 
                     </div>
                     <div className="board-square_instance-65">
-                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={8} yPosition={5} /> 
+                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={8} yPosition={5} handleClick={this.props.handleClick} /> 
                     </div>
                     <div className="board-square_instance-91">
-                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={8} yPosition={6} /> 
+                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={8} yPosition={6} handleClick={this.props.handleClick} /> 
                     </div>
                     <div className="board-square_instance-25">
-                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={8} yPosition={7} /> 
+                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={8} yPosition={7} handleClick={this.props.handleClick} /> 
                     </div>
                     <div className="board-square_instance-74">
-                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={8} yPosition={8} /> 
+                        <Square state={"default"} bombCount={""} color={"#ffffff"} text={""} xPosition={8} yPosition={8} handleClick={this.props.handleClick} /> 
                     </div>
                 </div>
             </div>

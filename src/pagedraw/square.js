@@ -38,7 +38,7 @@ function render() {
             </div>
         : null}
         { (this.props.state === "default") ?
-            <div onClick={this.props.handleClick} className="square-default-9">
+            <div onClick={() => this.props.handleClick(this.props.xPosition, this.props.yPosition)} className="square-default-9">
                 <div className="square-3-0-0">
                     <div className="square-outer_square-3">
                         <div className="square-3-0-0-0-0">
