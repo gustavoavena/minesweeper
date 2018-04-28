@@ -74,7 +74,7 @@ export default class MinesweeperController extends Component {
 		let board = appState.board;
 		let states = appState.states;
 
-		states[x][y] = EXPOSED_STATE;
+		appState.states[x][y] = EXPOSED_STATE;
 
 		
 
@@ -88,7 +88,12 @@ export default class MinesweeperController extends Component {
 					&& (board[i][j] != 9) 
 					&& (states[i][j] == DEFAULT_STATE) ) {
 					// console.log("Incrementing i, j = ", i, j);
-					states[i][j] = EXPOSED_STATE;
+
+					appState.states[i][j] = EXPOSED_STATE;
+
+					if(board[i][j] == 0) {
+						appState = this.openSquare(i, j, appState);
+					}
 				}
 			}
 		}
