@@ -3,18 +3,18 @@
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    padding-top: 120px;
+    padding-top: 61px;
     background: rgb(251, 244, 244);
     min-height: 100vh;
 }
 
 .mainscreen-0 {
     display: flex;
-    padding-left: 120px;
-    padding-right: 120px;
+    padding-left: 46px;
+    padding-right: 631px;
 }
 
-.mainscreen-board_instance-1 {
+.mainscreen-board_instance-5 {
     flex-shrink: 0;
     display: flex;
     flex-direction: column;

@@ -10,28 +10,28 @@ function render() {
                 <Square state={(this.props.states[0])} color={"#ffffff"} xPosition={this.props.xPosition} yPosition={0} handleClick={this.props.handleClick} boardValue={(this.props.boardValues[0])} /> 
             </div>
             <div className="boardline-square_instance_2-9">
-                <Square state={(this.props.states[0])} color={"#ffffff"} xPosition={this.props.xPosition} yPosition={0} handleClick={this.props.handleClick} boardValue={(this.props.boardValues[0])} /> 
+                <Square state={(this.props.states[1])} color={"#ffffff"} xPosition={this.props.xPosition} yPosition={1} handleClick={this.props.handleClick} boardValue={(this.props.boardValues[1])} /> 
             </div>
             <div className="boardline-square_instance_2-6">
-                <Square state={(this.props.states[0])} color={"#ffffff"} xPosition={this.props.xPosition} yPosition={0} handleClick={this.props.handleClick} boardValue={(this.props.boardValues[0])} /> 
+                <Square state={(this.props.states[2])} color={"#ffffff"} xPosition={this.props.xPosition} yPosition={2} handleClick={this.props.handleClick} boardValue={(this.props.boardValues[2])} /> 
             </div>
             <div className="boardline-square_instance_2-4">
-                <Square state={(this.props.states[0])} color={"#ffffff"} xPosition={this.props.xPosition} yPosition={0} handleClick={this.props.handleClick} boardValue={(this.props.boardValues[0])} /> 
+                <Square state={(this.props.states[3])} color={"#ffffff"} xPosition={this.props.xPosition} yPosition={3} handleClick={this.props.handleClick} boardValue={(this.props.boardValues[3])} /> 
             </div>
             <div className="boardline-square_instance_2-91">
-                <Square state={(this.props.states[0])} color={"#ffffff"} xPosition={this.props.xPosition} yPosition={0} handleClick={this.props.handleClick} boardValue={(this.props.boardValues[0])} /> 
+                <Square state={(this.props.states[4])} color={"#ffffff"} xPosition={this.props.xPosition} yPosition={4} handleClick={this.props.handleClick} boardValue={(this.props.boardValues[4])} /> 
             </div>
             <div className="boardline-square_instance_2-0">
-                <Square state={(this.props.states[0])} color={"#ffffff"} xPosition={this.props.xPosition} yPosition={0} handleClick={this.props.handleClick} boardValue={(this.props.boardValues[0])} /> 
+                <Square state={(this.props.states[5])} color={"#ffffff"} xPosition={this.props.xPosition} yPosition={5} handleClick={this.props.handleClick} boardValue={(this.props.boardValues[5])} /> 
             </div>
             <div className="boardline-square_instance_2-7">
-                <Square state={(this.props.states[0])} color={"#ffffff"} xPosition={this.props.xPosition} yPosition={0} handleClick={this.props.handleClick} boardValue={(this.props.boardValues[0])} /> 
+                <Square state={(this.props.states[6])} color={"#ffffff"} xPosition={this.props.xPosition} yPosition={6} handleClick={this.props.handleClick} boardValue={(this.props.boardValues[6])} /> 
             </div>
             <div className="boardline-square_instance_2-1">
-                <Square state={(this.props.states[0])} color={"#ffffff"} xPosition={this.props.xPosition} yPosition={0} handleClick={this.props.handleClick} boardValue={(this.props.boardValues[0])} /> 
+                <Square state={(this.props.states[7])} color={"#ffffff"} xPosition={this.props.xPosition} yPosition={7} handleClick={this.props.handleClick} boardValue={(this.props.boardValues[7])} /> 
             </div>
             <div className="boardline-square_instance_2-40">
-                <Square state={(this.props.states[0])} color={"#ffffff"} xPosition={this.props.xPosition} yPosition={0} handleClick={this.props.handleClick} boardValue={(this.props.boardValues[0])} /> 
+                <Square state={(this.props.states[8])} color={"#ffffff"} xPosition={this.props.xPosition} yPosition={8} handleClick={this.props.handleClick} boardValue={(this.props.boardValues[8])} /> 
             </div>
         </div>
     </div>;

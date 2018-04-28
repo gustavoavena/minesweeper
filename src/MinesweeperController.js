@@ -104,8 +104,8 @@ function generateBoard(bombs = 10) {
 		var squareNumber = Math.floor(Math.random() * 81); // Number beetween 0 and 80 (closed).
 		var x = Math.floor(squareNumber / N), y = Math.floor(squareNumber % N); // element indexes in the board
 
-		console.log("x, y = ", x, y);
-		console.log("initial board, line 1:\n", board[0]);
+		// console.log("x, y = ", x, y);
+		// console.log("initial board, line 1:\n", board[0]);
 		// console.log("bombs = ", bombs);
 
 
@@ -128,9 +128,11 @@ function generateBoard(bombs = 10) {
 
 		bombCount++;
 
-		console.log("bombCount = ", bombCount);
+		// console.log("bombCount = ", bombCount);
 	}
 
+
+	console.log("inital board: ", board);
 
 	return board;
 }

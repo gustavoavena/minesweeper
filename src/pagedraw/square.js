@@ -20,7 +20,7 @@ function render() {
                 <div className="square-1-0-0">
                     <div className="square-outer_square-4">
                         <div className="square-1-0-0-0-0">
-                            <input type="text" value={this.props.text} className="square-bombcount-8" /> 
+                            <input type="text" value={this.props.boardValue} className="square-bombcount-8" /> 
                         </div>
                     </div>
                 </div>

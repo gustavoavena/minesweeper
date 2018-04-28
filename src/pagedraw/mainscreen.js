@@ -7,7 +7,7 @@ import './mainscreen.css';
 function render() {
     return <div className="mainscreen-mainscreen-8">
         <div className="mainscreen-0">
-            <div className="mainscreen-board_instance-1">
+            <div className="mainscreen-board_instance-5">
                 <MinesweeperController />
             </div>
         </div>
