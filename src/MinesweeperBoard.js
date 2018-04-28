@@ -7,9 +7,10 @@ Board:
 0 - Empty
 1 to 8 - Bombcount
 9 - Bomb
--1 - Flag
+negative values: Flag
 
 */
+
 
 function generateBoard(bombs = 10) {
 	const N = 9;

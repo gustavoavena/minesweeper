@@ -9,7 +9,7 @@ function render() {
         <div className="mainscreen-1">
             <div className="mainscreen-1-0" /> 
             <div className="mainscreen-board_instance-0">
-                <Board /> 
+                <Board this.props.handleClick={()} /> 
             </div>
             <div className="mainscreen-1-2" /> 
         </div>
