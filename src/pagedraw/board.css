@@ -3,10 +3,105 @@
     display: flex;
     flex-direction: column;
     flex-grow: 1;
+    padding-top: 15px;
+    padding-bottom: 120px;
     background: #FFFFFF;
 }
 
 .board-0 {
+    display: flex;
+    padding-left: 120px;
+    padding-right: 26px;
+}
+
+.board-0-0 {
+    display: flex;
+    flex-direction: column;
+    padding-top: 8px;
+    padding-bottom: 36px;
+}
+
+.board-0-0-0 {
+    display: flex;
+}
+
+.board-remaining_bombs_label-5 {
+    width: 135px;
+    flex-shrink: 0;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #000000;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0px;
+    font-weight: bold;
+    font-style: normal;
+    text-decoration: none;
+    text-align: left;
+    word-wrap: break-word;
+}
+
+.board-0-1 {
+    display: flex;
+    flex-direction: column;
+    padding-top: 8px;
+    padding-bottom: 36px;
+}
+
+.board-0-1-0 {
+    display: flex;
+}
+
+.board-remaining_bombs_count-0 {
+    width: 24px;
+    flex-shrink: 0;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #000000;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0px;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+    text-align: left;
+    word-wrap: break-word;
+}
+
+.board-flag_mode_button-0 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 235px;
+    padding-top: 1px;
+    padding-bottom: 3px;
+}
+
+.board-0-2-0 {
+    display: flex;
+    padding-left: 1px;
+    padding-right: 3px;
+}
+
+.board-flag_icon-8 {
+    width: 56px;
+    height: 56px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    box-shadow: inset 0px 0px 1px 0px #000;
+    border-width: 0px;
+}
+
+.board-1 {
+    display: flex;
+    margin-top: 45px;
+    padding-left: 120px;
+    padding-right: 120px;
+}
+
+.board-game_board-9 {
+    display: flex;
+    flex-direction: column;
+}
+
+.board-1-0-0 {
     display: flex;
 }
 
@@ -16,7 +111,7 @@
     flex-direction: column;
 }
 
-.board-1 {
+.board-1-0-1 {
     display: flex;
 }
 
@@ -26,7 +121,7 @@
     flex-direction: column;
 }
 
-.board-2 {
+.board-1-0-2 {
     display: flex;
 }
 
@@ -36,7 +131,7 @@
     flex-direction: column;
 }
 
-.board-3 {
+.board-1-0-3 {
     display: flex;
 }
 
@@ -46,7 +141,7 @@
     flex-direction: column;
 }
 
-.board-4 {
+.board-1-0-4 {
     display: flex;
 }
 
@@ -56,7 +151,7 @@
     flex-direction: column;
 }
 
-.board-5 {
+.board-1-0-5 {
     display: flex;
 }
 
@@ -66,7 +161,7 @@
     flex-direction: column;
 }
 
-.board-6 {
+.board-1-0-6 {
     display: flex;
 }
 
@@ -76,7 +171,7 @@
     flex-direction: column;
 }
 
-.board-7 {
+.board-1-0-7 {
     display: flex;
 }
 
@@ -86,7 +181,7 @@
     flex-direction: column;
 }
 
-.board-8 {
+.board-1-0-8 {
     display: flex;
 }
 

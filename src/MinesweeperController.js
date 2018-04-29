@@ -23,6 +23,10 @@ let FLAG_STATE = "flag";
 let BOMB_STATE = "bomb";
 let EXPOSED_STATE = "exposed";
 
+let FLAG_UNSELECTED_COLOR = "#E8E4E4";
+// let FLAG_UNSELECTED_COLOR = "rgb(232,228,228)";
+let FLAG_SELECTED_COLOR = "#878787";
+
 export default class MinesweeperController extends Component {
 
 	constructor(props) {
@@ -30,7 +34,7 @@ export default class MinesweeperController extends Component {
 
 		this.state = {
 			numberOfBombs: 10,
-			remainingBombs: 10,
+			remainingSquares: 81,
 			numberOfFlags: 0,
 			board: generateBoard(10),
 			states: [
@@ -44,10 +48,15 @@ export default class MinesweeperController extends Component {
 				Array(9).fill(DEFAULT_STATE),
 				Array(9).fill(DEFAULT_STATE),
 			],
+			flagMode: false,
+			flagButtonColor: FLAG_UNSELECTED_COLOR,
 		};
 
+		// Why do I need to do this?
 		this.handleClick = this.handleClick.bind(this);
 		this.openSquare = this.openSquare.bind(this);
+		this.flagClick = this.flagClick.bind(this);
+		// this.userWon
 	}
 
 	render() {
@@ -55,6 +64,9 @@ export default class MinesweeperController extends Component {
 	      handleClick={this.handleClick}
 	      board={this.state.board}
 	      states={this.state.states}
+	      flagClick={this.flagClick}
+	      flagButtonColor={this.state.flagButtonColor}
+	      remainingBombs={10 - this.state.numberOfFlags}
 	    />);
   	}
 
@@ -67,14 +79,20 @@ export default class MinesweeperController extends Component {
   		alert("Game over!");
   	}
 
+  	userWon() {
+  		alert("Congratulations! You win!");
+  	}
+
 
 	
 
 	openSquare(x, y, appState) {
 		let board = appState.board;
 		let states = appState.states;
+		// let remainingSquares = appState.remainingSquares;
 
 		appState.states[x][y] = EXPOSED_STATE;
+		appState.remainingSquares--;
 
 		
 
@@ -90,58 +108,85 @@ export default class MinesweeperController extends Component {
 					// console.log("Incrementing i, j = ", i, j);
 
 					appState.states[i][j] = EXPOSED_STATE;
+					
 
 					// if(board[i][j] == 0) {
 					if(board[i][j] == "") {
 						appState = this.openSquare(i, j, appState);
+					} else {
+						appState.remainingSquares--;
 					}
 				}
 			}
 		}
 
 		appState.states = states;
+		// appState.remainingSquares = remainingSquares;
 		
 		return appState;
 	}
 
-	squareClicked(x, y) {
-		let board = this.state.board;
-
-		if(board[x][y] == 9) { // BOMB! Game over!
-			this.gameOver();
-		}
-		
-
-		// update state here
-		let newAppState = this.openSquare(x, y, this.state);
-
-		this.state = newAppState;
-	}
+	
 
 	handleClick(x, y) {
 
-		console.log("State before click: ", this.state);
+		// console.log("State before click: ", this.state);
 		// alert(`Square clicked in position: (${x}, ${y})`);
 
   		let board = this.state.board;
 
-		if(board[x][y] == 9) { // BOMB! Game over!
-			this.gameOver();
-		}
-		
 
+		if(!this.state.flagMode) {
+			if(board[x][y] == 9) { // BOMB! Game over!
+				this.gameOver();
+			}
 		// update state here
-		let newAppState = this.openSquare(x, y, this.state);
+			let newAppState = this.openSquare(x, y, this.state);
 
-		this.state = newAppState;
+			console.log(`newAppState.remainingSquares = ${newAppState.remainingSquares}`);
 
-		this.setState((prevState, props) => {
-			return newAppState;
-		});
+			if(newAppState.remainingSquares == this.state.numberOfFlags) {
+				this.userWon();
+			}
 
-		console.log("State after click: ", this.state);
+			this.setState((prevState, props) => {
+				return newAppState;
+			});
+		} else { // Flag mode is on
+			// alert("Clicking on flag mode");
+			let newAppState = this.state.states;
+			let numberOfFlags = this.state.numberOfFlags;
+
+			if(newAppState[x][y] == DEFAULT_STATE) {
+				newAppState[x][y] = FLAG_STATE;
+				numberOfFlags++;
+			} else if(newAppState[x][y] == FLAG_STATE) {
+				newAppState[x][y] = DEFAULT_STATE;
+				numberOfFlags--;
+			}
+
+			this.setState((prevState, props) => {
+				return {state: newAppState, numberOfFlags: numberOfFlags};
+			});
+
+		}
+
+		// console.log("State after click: ", this.state);
 
 		// alert(`Square clicked in position: (${x}, ${y})`);
+  	}
+
+
+  	flagClick() {
+  		
+  		this.setState((prevState, props) => {
+			return {
+				flagMode: !this.state.flagMode,
+				flagButtonColor: this.state.flagMode ? FLAG_UNSELECTED_COLOR : FLAG_SELECTED_COLOR,
+			};
+		});
+
+		// alert(`Flag mode: ${this.state.flagMode}`);
   	}
 
 
