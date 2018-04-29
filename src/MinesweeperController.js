@@ -91,7 +91,8 @@ export default class MinesweeperController extends Component {
 
 					appState.states[i][j] = EXPOSED_STATE;
 
-					if(board[i][j] == 0) {
+					// if(board[i][j] == 0) {
+					if(board[i][j] == "") {
 						appState = this.openSquare(i, j, appState);
 					}
 				}
@@ -196,6 +197,18 @@ function generateBoard(bombs = 10) {
 		bombCount++;
 
 		// console.log("bombCount = ", bombCount);
+	}
+
+	// The loop below will substitute 0s for empty string (looks better on the board)
+	var i, j;
+	for(i=0; i < N; i++) {
+		for(j=0; j < N; j++) {
+
+			if(board[i][j] == 0) {
+				board[i][j] = "";
+			}
+			
+		}
 	}
 
 
