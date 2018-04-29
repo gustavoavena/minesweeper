@@ -1,30 +1,21 @@
 
 
-/*
-
-Board:
-
-0 - Empty
-1 to 8 - Bombcount
-9 - Bomb
-negative values: Flag
-
-*/
 
 
 import React, { Component } from 'react';
-// import Square from './pagedraw/square';
 import Board from './pagedraw/board';
 
 
-// Constants with the state names to maintain consistency
+
+const N = 9;
+
+// Constants with the state names and color strings to maintain consistency
 let DEFAULT_STATE = "default";
 let FLAG_STATE = "flag";
 let BOMB_STATE = "bomb";
 let EXPOSED_STATE = "exposed";
 
 let FLAG_UNSELECTED_COLOR = "#E8E4E4";
-// let FLAG_UNSELECTED_COLOR = "rgb(232,228,228)";
 let FLAG_SELECTED_COLOR = "#878787";
 
 export default class MinesweeperController extends Component {
@@ -71,14 +62,7 @@ export default class MinesweeperController extends Component {
   	}
 
   	
-
-  	 // Perform changes on the board after game is over.
-  	gameOver() {
-  		const N = 9;
-
-  		alert("Game over!");
-
-
+  	exposeBoard() {
   		let states = this.state.states;
   		let board = this.state.board;
 
@@ -97,10 +81,18 @@ export default class MinesweeperController extends Component {
   		this.setState((prevState, props) => {
   			return {states: states};
   		});
+  	}
 
+  	 // Perform changes on the board after game is over.
+  	gameOver() {
+  		
+  		this.exposeBoard();
+  		alert("Game over!");
   	}
 
   	userWon() {
+
+  		this.exposeBoard();
   		alert("Congratulations! You win!");
   	}
 
@@ -110,32 +102,26 @@ export default class MinesweeperController extends Component {
 	openSquare(x, y, appState) {
 		let board = appState.board;
 		let states = appState.states;
-		// let remainingSquares = appState.remainingSquares;
 
 		if(appState.states[x][y] === EXPOSED_STATE) {
 			return appState;
 		}
 
-
 		appState.states[x][y] = EXPOSED_STATE;
 		appState.remainingSquares--;
 
+
 		
-
-
-		const N = 9;
 		var i, j;
 		for(i=x-1; i <= x+1; i++) {
 			for(j=y-1; j <= y+1; j++) {
 
-				if(i >= 0 && i < N && j >= 0 && j < N 
-					&& (board[i][j] != 9) 
-					&& (states[i][j] == DEFAULT_STATE) ) {
-					// console.log("Incrementing i, j = ", i, j);
+				if(i >= 0 && i < N && j >= 0 && j < N && (board[i][j] != 9) 
+					&& (states[i][j] == DEFAULT_STATE)) {
 
-					// if(board[i][j] == 0) {
 					if(board[i][j] == "") { // if there are no adjacent bombs, open it recursively.
 						appState = this.openSquare(i, j, appState);
+
 					} else { // else, just expose it
 						appState.states[i][j] = EXPOSED_STATE;
 						appState.remainingSquares--;
@@ -145,8 +131,6 @@ export default class MinesweeperController extends Component {
 		}
 
 		appState.states = states;
-		// appState.remainingSquares = remainingSquares;
-		
 		return appState;
 	}
 
@@ -154,8 +138,6 @@ export default class MinesweeperController extends Component {
 
 	handleClick(x, y) {
 
-		// console.log("State before click: ", this.state);
-		// alert(`Square clicked in position: (${x}, ${y})`);
 
   		let board = this.state.board;
 
@@ -166,20 +148,21 @@ export default class MinesweeperController extends Component {
 				this.gameOver();
 				return;
 			}
-		// update state here
+
 			let newAppState = this.openSquare(x, y, this.state);
 
-			console.log(`newAppState.remainingSquares = ${newAppState.remainingSquares}`);
 
 			if(newAppState.remainingSquares == this.state.numberOfFlags) {
 				this.userWon();
+				return;
 			}
 
 			this.setState((prevState, props) => {
 				return newAppState;
 			});
+
 		} else { // Flag mode is on
-			// alert("Clicking on flag mode");
+
 			let newAppState = this.state.states;
 			let numberOfFlags = this.state.numberOfFlags;
 
@@ -197,9 +180,7 @@ export default class MinesweeperController extends Component {
 
 		}
 
-		// console.log("State after click: ", this.state);
 
-		// alert(`Square clicked in position: (${x}, ${y})`);
   	}
 
 
@@ -212,16 +193,24 @@ export default class MinesweeperController extends Component {
 			};
 		});
 
-		// alert(`Flag mode: ${this.state.flagMode}`);
   	}
 
 
 }
 
 
+
+/*
+
+Board:
+0 to 8 - Number of adjacent bombs
+9 - Bomb
+
+*/
+
 // This will generate a board that stores the position of the bombs and the numbers to be diplayed in each empty cell.
 function generateBoard(bombs = 10) {
-	const N = 9;
+	
 
 
 	var board = [
@@ -243,10 +232,6 @@ function generateBoard(bombs = 10) {
 		var squareNumber = Math.floor(Math.random() * 81); // Number beetween 0 and 80 (closed).
 		var x = Math.floor(squareNumber / N), y = Math.floor(squareNumber % N); // element indexes in the board
 
-		// console.log("x, y = ", x, y);
-		// console.log("initial board, line 1:\n", board[0]);
-		// console.log("bombs = ", bombs);
-
 
 		if(board[x][y] == 9) {
 			continue;
@@ -259,7 +244,6 @@ function generateBoard(bombs = 10) {
 			for(j=y-1; j <= y+1; j++) {
 
 				if(i >= 0 && i < N && j >= 0 && j < N && board[i][j] != 9) {
-					// console.log("Incrementing i, j = ", i, j);
 					board[i][j] = board[i][j] + 1;
 				}
 			}
