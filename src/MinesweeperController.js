@@ -72,11 +72,32 @@ export default class MinesweeperController extends Component {
 
   	
 
-  	gameOver(x, y) {
-  		// Perform changes on the board for gameOver!
-  		// x, y are the coordinates of the clicked bomb...
+  	 // Perform changes on the board after game is over.
+  	gameOver() {
+  		const N = 9;
 
   		alert("Game over!");
+
+
+  		let states = this.state.states;
+  		let board = this.state.board;
+
+  		let i, j;
+  		for(i=0; i < N; i++) {
+  			for(j=0; j < N; j++) {
+
+  				if(board[i][j] != 9) {
+  					states[i][j] = EXPOSED_STATE;
+  				} else {
+  					states[i][j] = BOMB_STATE;
+  				}
+  			}
+  		}
+
+  		this.setState((prevState, props) => {
+  			return {states: states};
+  		});
+
   	}
 
   	userWon() {
@@ -140,8 +161,10 @@ export default class MinesweeperController extends Component {
 
 
 		if(!this.state.flagMode) {
+
 			if(board[x][y] == 9) { // BOMB! Game over!
 				this.gameOver();
+				return;
 			}
 		// update state here
 			let newAppState = this.openSquare(x, y, this.state);

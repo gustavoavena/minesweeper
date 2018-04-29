@@ -6,22 +6,26 @@ import './board.css';
 function render() {
     return <div className="board-board-0">
         <div className="board-0">
-            <div className="board-0-0">
+            <div className="board-remaining_bombs_display-4">
                 <div className="board-0-0-0">
-                    <div className="board-remaining_bombs_label-5">
-                        {"Remaining Bombs: "}
+                    <div className="board-0-0-0-0">
+                        <div className="board-0-0-0-0-0">
+                            <div className="board-remaining_bombs_label-5">
+                                {"Remaining Bombs:"}
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div className="board-0-1">
-                <div className="board-0-1-0">
-                    <div className="board-remaining_bombs_count-0">
-                        { this.props.remainingBombs }
+                    <div className="board-0-0-0-1">
+                        <div className="board-0-0-0-1-0">
+                            <div className="board-remaining_bombs_count-0">
+                                { this.props.remainingBombs }
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
             <div onClick={this.props.flagClick} className="board-flag_mode_button-0" style={{"background": this.props.flagButtonColor}}>
-                <div className="board-0-2-0">
+                <div className="board-0-1-0">
                     <img src="https://ucarecdn.com/88771d9f-a64b-404f-a959-3caebac55674/" className="board-flag_icon-8" /> 
                 </div>
             </div>
