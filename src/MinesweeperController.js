@@ -91,6 +91,11 @@ export default class MinesweeperController extends Component {
 		let states = appState.states;
 		// let remainingSquares = appState.remainingSquares;
 
+		if(appState.states[x][y] === EXPOSED_STATE) {
+			return appState;
+		}
+
+
 		appState.states[x][y] = EXPOSED_STATE;
 		appState.remainingSquares--;
 
@@ -107,13 +112,11 @@ export default class MinesweeperController extends Component {
 					&& (states[i][j] == DEFAULT_STATE) ) {
 					// console.log("Incrementing i, j = ", i, j);
 
-					appState.states[i][j] = EXPOSED_STATE;
-					
-
 					// if(board[i][j] == 0) {
-					if(board[i][j] == "") {
+					if(board[i][j] == "") { // if there are no adjacent bombs, open it recursively.
 						appState = this.openSquare(i, j, appState);
-					} else {
+					} else { // else, just expose it
+						appState.states[i][j] = EXPOSED_STATE;
 						appState.remainingSquares--;
 					}
 				}
